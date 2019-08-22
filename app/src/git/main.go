@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-  _, err := git.PlainClone("/go/temp", false, &git.CloneOptions{
+  _, err := git.PlainClone("/go/git/temp", false, &git.CloneOptions{
     URL: "https://github.com/harithj/golang/docker",
     Progress: os.Stdout,
   })
